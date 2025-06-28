@@ -10,10 +10,11 @@ function AddCustomerForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('https://manyane-gkbpcvcncxhhfhhq.southafricanorth-01.azurewebsites.net/api/add', customer);
+    await axios.post('https://springbootazdemo-production.up.railway.app/api/add', customer);
     alert('Customer added successfully!');
     setCustomer({ fullName: '', email: '', city: '' });
   };
+
 
   return (
     <form onSubmit={handleSubmit}>

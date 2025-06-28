@@ -7,7 +7,7 @@ function SearchCustomer() {
 
   const handleSearch = async () => {
     try {
-      const res = await axios.get(`https://manyane-gkbpcvcncxhhfhhq.southafricanorth-01.azurewebsites.net/api/search/${id}`);
+      const res = await axios.get(`https://springbootazdemo-production.up.railway.app/api/search/${id}`);
       setFullName(res.data);
     } catch (err) {
       console.error(err);

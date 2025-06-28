@@ -5,7 +5,7 @@ function CustomerList() {
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
-    axios.get('https://manyane-gkbpcvcncxhhfhhq.southafricanorth-01.azurewebsites.net/api/getAllCustomers')
+    axios.get('https://springbootazdemo-production.up.railway.app/api/getAllCustomers')
       .then(res => setCustomers(res.data))
       .catch(err => console.error(err));
   }, []);
